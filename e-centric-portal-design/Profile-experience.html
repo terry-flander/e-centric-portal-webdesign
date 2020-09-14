@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <!-- https://thememakker.com/templates/lucid/html/h-menu/index.html -->
+  <meta charset="utf-8">
+  <title>Hyrespace - Create Profile</title>
+
+  <!-- CSS Files -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="assets/animate-css/animate.css">
+  <link rel="stylesheet" href="assets/bootstrap-progressbar/bootstrap-progressbar-3.3.4.min.css">
+  <link rel="stylesheet" href="assets/toastr/toastr.min.css">
+
+  <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/jquery-steps/jquery.steps.css">
+  <!-- Bootstrap Date-Picker Plugin -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css" />
+
+  <link href="https://fonts.googleapis.com/css?family=Archivo" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <div class="navbar-brand">
+        <a href="index.html"><img src="assets/images/logo.png" alt="e-Ci" class="img-responsive logo"></a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main_menu">
+    <nav class="navbar navbar-expand-lg">
+      <div class="container">
+        <div class="navbar-collapse align-items-center collapse" id="navbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">&nbsp;</li>
+          </ul>
+        </div>
+
+      </div>
+    </nav>
+  </div>
+
+  <div id="main-content" class="profileviewpage">
+    <div class="container">
+      <div class="block-header">
+        <div class="row">
+          <div class="col-lg-5 col-md-8 col-sm-12">
+            <h2>Profile Creation</h2>
+            <ul class="breadcrumb">
+              <li class="breadcrumb-item"><i class="fas fa-home"></i></li>
+              <li class="breadcrumb-item active">Profile Creation</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="row clearfix">
+        <div class="col-lg-12 col-md-12 col-sm-12">
+          <div class="card">
+            <div class="body">
+              <div id="profile-creation-wizard">
+                <h3>Introduction</h3>
+                <section>
+                  Introduction text goes here about welcome to the site and the next steps will create the profile
+                </section>
+                <h3>Personal Information</h3>
+                <section>
+                  <h3>Personal Information</h3>
+                  <div class="form-group row">
+                    <div class="col-sm-6">
+                      <label for="first-name">First Name</label>
+                      <input type="text" class="form-control" id="first-name" name="first-name" data-validation="required">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="last-name">Last Name</label>
+                      <input type="text" class="form-control" id="last-name" name="last-name" data-validation="required">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-6">
+                      <label for="email-address">Email Address</label>
+                      <input type="text" class="form-control" id="email-address" name="email-address" data-validation="required">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="mobile-phone">Mobile Phone</label>
+                      <input type="text" class="form-control" id="mobile-phone" name="mobile-phone" data-validation="required">
+                    </div>
+                  </div>
+                  <hr>
+                  <div class="form-group row">
+                    <div class="col-sm-6">
+                      <label for="dob">Date of Birth</label>
+                      <input type="text" class="form-control" id="dob" name="dob" data-validation="required">
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="last-name">Location</label>
+                      <select class="form-control" id="location" name="location" data-validation="required">
+                        <option>Melbourne</option>
+                        <option>Sydney</option>
+                        <option>Perth</option>
+                        <option>Adelaide</option>
+                        <option>Brisbane</option>
+                        <option>Canberra</option>
+                        <option>Darwin</option>
+                        <option>Hobart</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-6">
+                      <label for="linkedin-profile">LinkedIn Profile</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="linkedin-profile-url">linkedin.com/in/</span>
+                        </div>
+                        <input type="text" class="form-control" id="linkedin-profile" aria-describedby="linkedin-profile-url">
+                      </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <label for="fb-profile">Facebook Profile</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="fb-profile-url">facebook.com/</span>
+                        </div>
+                        <input type="text" class="form-control" id="fb-profile" aria-describedby="fb-profile-url">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <div class="col-sm-6">
+                      <label for="twitter-profile">Twitter Profile</label>
+                      <div class="input-group">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text" id="twitter-profile-url">twitter.com/</span>
+                        </div>
+                        <input type="text" class="form-control" id="twitter-profile" aria-describedby="twitter-profile-url">
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <h3>Professional Summary</h3>
+                <section>
+                  <p>Wonderful transition effects.</p>
+                </section>
+                <h3>Experience</h3>
+                <section>
+                    <h3>Experience</h3>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                          <label for="job-title">Job Title</label>
+                          <input type="text" class="form-control" id="job-title" name="job-title" data-validation="required">
+                        </div>
+                        <div class="col-sm-6">
+                          <label for="company-name">Company Name</label>
+                          <input type="text" class="form-control" id="company-name" name="company-name" data-validation="required">
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-sm-6">
+                            <label for="start-date">Start Date</label>
+                            <!--text box input-->
+                                <!-- <input type="text" class="form-control" id="start-date" name="start-date" data-validation="required"> -->
+                            
+                            <!--manually month&year input-->
+                                <!--<div>
+                                    <select name="start-month" id="start-month">
+                                        <option value="0">Month</option>
+                                        <option value="1">1</option>
+                                        <option value="2">2</option>
+                                        <option value="3">3</option>
+                                        <option value="4">4</option>
+                                        <option value="5">5</option>
+                                    </select>
+                                    <select name="start-year" id="start-year">
+                                        <option value="0">Year</option>
+                                        <option value="1">2000</option>
+                                        <option value="2">2001</option>
+                                        <option value="3">2002</option>
+                                        <option value="4">2003</option>
+                                        <option value="5">2004</option>
+                                    </select> 
+                                </div>-->
+
+                            <!--min view input_modified: problem is calendar in Day&Month&Year, but output is Month&Year-->
+                            <div class="input-append date" id="datepicker" data-date="02-2018" data-date-format="mm-yyyy">
+                                <input class="form-control" type="text" value="mm-yyyy" readonly>
+                                <span class="add-on"><i class="icon-th"></i></span>
+                            </div> 
+                            <!--min view input_modified-->
+                            <script>$('#datepicker').datepicker()</script>
+                            
+                        </div>
+
+                        <!--min view input_modified_end date-->
+                        <div class="col-sm-6">
+                            <label for="end-date">End Date</label>
+                            <div class="input-append date" id="datepicker" data-date="02-2018" data-date-format="mm-yyyy">
+                                    <input class="form-control" type="text" value="mm-yyyy" readonly>
+                                    <span class="add-on"><i class="icon-th"></i></span>
+                                </div> 
+                        <!--min view input_modified-->
+                        <script>$('#datepicker').datepicker()</script>
+                            
+                            <!-- <div class="input-append date" id="datepicker" data-date="02-2012" data-date-format="mm-yyyy">
+                                <input class="form-control" type="text" value="mm-yyyy" readonly>
+                                <span class="add-on"><i class="icon-th"></i></span>
+                            </div> -->
+
+                            <!--min view input, why it is not work? it seems that it needs jquery-->
+                            <!-- <div class='input-group date' id='datetimepicker10'>
+                                <input class="form-control" type='text' value="mm-yyyy">
+                                <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                            </div> -->
+                                
+                            <!--min view input:js-->
+                            <!-- <script type="text/javascript">
+                                $(function () {
+                                    $('#datetimepicker10').datetimepicker({
+                                        viewMode: 'years',
+                                        format: 'MM/YYYY'
+                                    });
+                                });
+                            </script> -->
+
+                        </div>
+                    </div>
+
+
+                    <div class="form-group row">
+                        <div class="col-sm-3">
+                            <label style="padding-top:7px" for="current-working" >Current Working</label>
+                        </div>
+                        <div class="col-sm-1">
+                            <input type="checkbox" class="form-control" id="current-working" name="current-working">
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class="col-sm-12">
+                            <label for="repsonsibility-achievement">Responsibility and Achievement</label>
+                        </div>
+                        <div class="col-sm-12">
+                            <textarea style= "height:7rem;width:100%" name="repsonsibility-achievement"></textarea>
+                        </div>
+                    </div>
+                    <div>
+
+                    </div>
+
+                    <div class="form-group row">
+                        <div style="display:block;margin-left:auto;margin-right:auto;z-index:1">
+                            <img src="assets/images/plus_button.png" class="img-responsive logo" width="20px" height="20px"> 
+                        </div>
+                    </div>
+                </section>
+                <h3>Education History</h3>
+                <section>
+                  <p>The next and previous buttons help you to navigate through your content.</p>
+                </section>
+                <h3>Skills and Interests</h3>
+                <section>
+                  <p>The next and previous buttons help you to navigate through your content.</p>
+                </section>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- JS Files -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+  <script src="assets/toastr/toastr.min.js"></script>
+  <script src="assets/knob/jquery.knob.js"></script>
+  <script src="assets/jquery-steps/jquery.steps.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+  <script>
+    window.FontAwesomeConfig = {
+      searchPseudoElements: true
+    }
+  </script>
+  <script>
+    $("#profile-creation-wizard").steps({
+      headerTag: "h3",
+      bodyTag: "section",
+      transitionEffect: "slideLeft",
+      stepsOrientation: "vertical",
+      enablePagination: true
+    });
+    $('#dob').datepicker({
+      format: "dd/mm/yyyy",
+      endDate: "today",
+      autoclose: true
+    });
+    </script>
+    
+    
+
+</body>
+
+</html>
